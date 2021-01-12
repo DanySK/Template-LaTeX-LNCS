@@ -6,7 +6,8 @@ This repository is meant to be used as template for quickly starting LaTeX proje
 ## Using the project
 
 1. Create a new repo using the "Use this template" button
-1. Add a repository secret named AUTOMERGE_TOKEN, with `repo` permission (or `public:repo` if your fork is public)
+1. Generate [a new authorization token](https://github.com/settings/tokens/new) with `repo` permission (or `public:repo` if your fork is public)
+1. Add a repository secret named AUTOMERGE_TOKEN, containing the token
 2. Edit the files as you like
 8. Just write, commit, and push, and in few minutes your files will be automagically available on GitHub.
 
