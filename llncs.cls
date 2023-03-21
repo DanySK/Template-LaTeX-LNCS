@@ -890,7 +890,7 @@ to0pt{\kern0.55\wd0\vrule height0.45\ht0\hss}\box0}}}}
 \par\addvspace\baselineskip
 \noindent\keywordname\enspace\ignorespaces#1}%
 \@ifpackageloaded{hyperref}{%
-\def\doi#1{\href{https://doi.org/\detokenize{#1}}{\url{https://doi.org/\detokenize{#1}}}}}{
+\def\doi#1{\href{https://doi.org/\detokenize{#1}}{\url{https://doi.org/#1}}}}{
 \def\doi#1{https://doi.org/\detokenize{#1}}}
 }
 \def\homedir{\~{ }}

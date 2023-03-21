@@ -1,24 +1,23 @@
 % This is samplepaper.tex, a sample chapter demonstrating the
 % LLNCS macro package for Springer Computer Science proceedings;
-% Version 2.20 of 2018/03/10
+% Version 2.21 of 2022/01/12
 %
 \documentclass[runningheads]{llncs}
-
+%
 \usepackage[T1]{fontenc}
-\def\doi#1{\href{https://doi.org/\detokenize{#1}}{\url{https://doi.org/\detokenize{#1}}}}
+% T1 fonts will be used to generate the final print and online PDFs,
+% so please use T1 fonts in your manuscript whenever possible.
+% Other font encondings may result in incorrect characters.
 %
 \usepackage{graphicx}
 % Used for displaying a sample figure. If possible, figure files should
 % be included in EPS format.
 %
-% If you use the hyperref package, please uncomment the following line
+% If you use the hyperref package, please uncomment the following two lines
 % to display URLs in blue roman font according to Springer's eBook style:
-% \renewcommand\UrlFont{\color{blue}\rmfamily}
+%\usepackage{color}
+%\renewcommand\UrlFont{\color{blue}\rmfamily}
 %
-\usepackage{listings}
-\lstset{language=Pascal}
-% Please use the
-
 \begin{document}
 %
 \title{Contribution Title\thanks{Supported by organization x.}}
@@ -102,20 +101,6 @@ Please note that short captions are centered, while long ones are
 justified by the macro package automatically.} \label{fig1}
 \end{figure}
 
-Program listings or code snippets in the text like \lstinline!var i:integer;!
-should be set in typewriter font. The ``listings'' macro package can be used
-for reader-friendly syntax highlighting as in the following Pascal sample code:\footnote{For
-typesetting pseudocode, the ``algorithmic'', ``algorithm2e'', ``algorithmicx'',
-and ``program'' packages are also worth considering.}
-\begin{lstlisting}
-for i:=maxint to 0 do
-begin
-    { do nothing }
-end;
-Write('end of sample code');
-\end{lstlisting}
-
-
 \begin{theorem}
 This is a sample theorem. The run-in heading is set in bold, while
 the following text appears in italics. Definitions, lemmas,
@@ -143,7 +128,6 @@ and a homepage~\cite{ref_url1}. Multiple citations are grouped
 the end of the paper, preceded by an unnumbered run-in heading (i.e.
 3rd-level heading).
 
-
 %
 % ---- Bibliography ----
 %
@@ -160,7 +144,7 @@ Author, F.: Article title. Journal \textbf{2}(5), 99--110 (2016)
 \bibitem{ref_lncs1}
 Author, F., Author, S.: Title of a proceedings paper. In: Editor,
 F., Editor, S. (eds.) CONFERENCE 2016, LNCS, vol. 9999, pp. 1--13.
-Springer, Heidelberg (2016). \doi{10.10007/123456789_0}
+Springer, Heidelberg (2016). \doi{10.10007/1234567890}
 
 \bibitem{ref_book1}
 Author, F., Author, S., Author, T.: Book title. 2nd edn. Publisher,
